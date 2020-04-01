@@ -1,7 +1,7 @@
 # norns_util_scripts
 a very simple interface for the norns to execute some shell scripts direct from the norns
 
-in a sort of alpha state and currently designed for my own use. more directions will come when it is ready to distribute.
+in an alpha state and currently setup for my own needs. more directions will come when it is ready to distribute.
 
 
 two scripts are included,
