@@ -8,7 +8,7 @@ two scripts are included
 all data is copied to ~/dust/data/util_scripts/
 
 for my own uses, I also enable the scripts to upload directly from the norns to cloud storage.
-to enable this, install rclone onto your norns using these instructions: (https://rclone.org/install/)[https://rclone.org/install/]
+to enable this, install rclone onto your norns using these instructions: https://rclone.org/install/
 
 setup a cloud drive and call it "drive" within rclone.
 
