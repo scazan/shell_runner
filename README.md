@@ -1,11 +1,16 @@
-# norns_util_scripts
-a very simple interface for the norns to execute some shell scripts direct from the norns
+# SCRIPTS
+a very simple interface for the norns to list and execute any shell script located in its "scripts" directory directly from the norns.
 
-in an alpha state and currently setup for my own needs. more directions will come when it is ready to distribute.
+two scripts are included
+* one to backup tape data to a cloud provider,
+* another to backup my connected OP-Z (when OP-Z is in disk mode)
 
+all data is copied to ~/dust/data/util_scripts/
 
-two scripts are included,
-one to backup tape data to a cloud provider,
-another to backup my OP-Z to a cloud provider
+for my own uses, I also enable the scripts to upload directly from the norns to cloud storage.
+to enable this, install rclone onto your norns using these instructions: (https://rclone.org/install/)[https://rclone.org/install/]
 
-both currently rely in installing rclone onto the norns itself via https://rclone.org/install/
+setup a cloud drive and call it "drive" within rclone.
+
+uncomment the last line in the two included scripts
+
