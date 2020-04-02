@@ -2,6 +2,8 @@
 DATE=`date -Iminutes`
 NEWDIR=/home/we/dust/data/util_scripts/op-z$DATE
 
+[ ! -d "/home/we/dust/data/util_scripts" ] && mkdir /home/we/dust/data/util_scripts
+
 mkdir $NEWDIR
 cp -r /media/usb/* $NEWDIR
 #/usr/bin/rclone copy $NEWDIR drive:op-z/$DATE -P --stats 2s --exclude="node_modules/**" --exclude=".git**"
