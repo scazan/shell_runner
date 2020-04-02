@@ -15,7 +15,7 @@ local message
 
 function scandir()
 	local i, t, popen = 0, {}, io.popen
-	for filename in popen('ls /home/we/dust/code/util_scripts/scripts/'):lines() do
+	for filename in popen('ls /home/we/dust/code/norns_scripts/scripts/'):lines() do
 		i = i + 1
 		t[i] = filename
 	end
@@ -33,7 +33,7 @@ function map(mappingFunction, t)
 end
 
 files = scandir()
-local scriptRoot = "/home/we/dust/code/util_scripts/scripts/"
+local scriptRoot = "/home/we/dust/code/norns_scripts/scripts/"
 local list = UI.ScrollingList.new (0, 20, 1, files);
 
 function init()
