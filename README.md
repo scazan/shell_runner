@@ -5,7 +5,7 @@ two scripts are included
 * one to backup tape data to a cloud provider,
 * another to backup my connected OP-Z (when OP-Z is in disk mode)
 
-all data is copied to ~/dust/data/util_scripts/
+all data is copied to ~/dust/data/norns_scripts/
 
 for my own uses, I also enable the scripts to upload directly from the norns to cloud storage.
 to enable this, install rclone onto your norns using these instructions: https://rclone.org/install/

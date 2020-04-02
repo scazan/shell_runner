@@ -1,3 +1,14 @@
+-- # SCRIPTS
+-- a very simple interface for
+-- the norns to list and execute
+-- any shell script located in
+-- its "scripts" directory
+-- directly from the norns.
+--
+--all data is copied to
+-- ~/dust/data/norns_scripts/
+
+
 local UI = require 'ui'
 local util = require 'util'
 local message
