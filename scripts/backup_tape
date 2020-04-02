@@ -1,8 +1,9 @@
 #!/bin/bash
 DATE=`date -Iminutes`
 
-[ ! -d "/home/we/dust/data/util_scripts" ] && mkdir /home/we/dust/data/util_scripts
+[ ! -d "/home/we/dust/data/norns_scripts" ] && mkdir /home/we/dust/data/norns_scripts
 
 mkdir /home/we/dust/audio/tape/$DATE
-mv /home/we/dust/audio/tape/*.wav /home/we/dust/data/util_scripts/tape$DATE/
-#/usr/bin/rclone copy /home/we/dust/data/util_scripts/tape$DATE drive:tape/$DATE -P --stats 2s --exclude="node_modules/**" --exclude=".git**"
+mkdir /home/we/dust/data/norns_scripts/tape$DATE
+mv /home/we/dust/audio/tape/*.wav /home/we/dust/data/norns_scripts/tape$DATE
+#/usr/bin/rclone copy /home/we/dust/data/norns_scripts/tape$DATE drive:tape/$DATE -P --stats 2s --exclude="node_modules/**" --exclude=".git**"
