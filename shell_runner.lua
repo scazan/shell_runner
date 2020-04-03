@@ -1,4 +1,4 @@
--- # SCRIPTS
+-- # SHELL RUNNER
 -- a simple interface for the
 -- norns to list and execute
 -- any shell script located in
