@@ -3,6 +3,7 @@ a simple interface for the norns to list and execute any shell script located in
 
 if you have a script you want to be executable from the norns, throw it into ~/dust/code/shell_runner/scripts/ and it should show in the list.
 
+if you have nice shell script you think others will find useful, feel free to submit a PR.
 three scripts are included by default
 * backup tape data (with option to upload to the cloud)
 * backup a connected OP-Z (when OP-Z is in disk mode)
