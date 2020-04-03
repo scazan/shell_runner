@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -r /home/we/dust/data/norns_scripts
+rm -r /home/we/dust/data/shell_runner

@@ -1,9 +1,10 @@
 #!/bin/bash
 DATE=`date -Iminutes`
-NEWDIR=/home/we/dust/data/norns_scripts/op-z$DATE
+NEWDIR=/home/we/dust/data/shell_runner/opz-$DATE
 
-[ ! -d "/home/we/dust/data/norns_scripts" ] && mkdir /home/we/dust/data/norns_scripts
+[ ! -d "/home/we/dust/data/shell_runner" ] && mkdir /home/we/dust/data/shell_runner
 
+# this can actually backup anything connected via usb. the only difference is that this script names the backup directory with a prefix of op-z
 mkdir $NEWDIR
 cp -r /media/usb/* $NEWDIR
 #/usr/bin/rclone copy $NEWDIR drive:op-z/$DATE -P --stats 2s --exclude="node_modules/**" --exclude=".git**"
