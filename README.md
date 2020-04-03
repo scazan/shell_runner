@@ -1,5 +1,6 @@
 # SHELL RUNNER (for norns)
 a simple interface for the norns to list and execute any shell script located in its "scripts" directory directly from the norns.
+shell scripts can be for bash, python 2.7, lua, or anything else that is stock on the norns.
 
 if you have a script you want to be executable from the norns, throw it into ~/dust/code/shell_runner/scripts/ and it should show in the list.
 
