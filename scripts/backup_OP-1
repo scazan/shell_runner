@@ -8,4 +8,4 @@ NEWDIR=/home/we/dust/data/shell_runner/$DEVICENAME-$DATE
 # this can actually backup anything connected via usb. the only difference is that this script names the backup directory with a prefix
 mkdir $NEWDIR
 cp -r /media/usb/* $NEWDIR
-/usr/bin/rclone copy $NEWDIR drive:$DEVICENAME/$DATE -P --stats 2s --exclude="node_modules/**" --exclude=".git**"
+#/usr/bin/rclone copy $NEWDIR drive:$DEVICENAME/$DATE -P --stats 2s --exclude="node_modules/**" --exclude=".git**"
