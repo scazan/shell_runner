@@ -1,0 +1,11 @@
+#!/bin/bash
+DATE=`date -Iminutes`
+DEVICENAME=op-1
+NEWDIR=/home/we/dust/data/shell_runner/$DEVICENAME-$DATE
+
+[ ! -d "/home/we/dust/data/shell_runner" ] && mkdir /home/we/dust/data/shell_runner
+
+# this can actually backup anything connected via usb. the only difference is that this script names the backup directory with a prefix
+mkdir $NEWDIR
+cp -r /media/usb/* $NEWDIR
+/usr/bin/rclone copy $NEWDIR drive:$DEVICENAME/$DATE -P --stats 2s --exclude="node_modules/**" --exclude=".git**"
